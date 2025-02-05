@@ -4,6 +4,19 @@ const count = ref(0);
 
 <template>
   <h1>Welcome To Nuxt</h1>
-  <button @click="count++">{{ count }}</button>
-  <a href="/blog">Read My blog</a>
+  <div class="flex">
+    <button @click="count++">{{ count }}</button>
+    <a href="/blog">Read My blog</a>
+  </div>
 </template>
+
+<style lang="css" scoped>
+  .flex {
+    display: flex;
+  }
+
+  .flex * {
+    flex: 1;
+  }
+
+</style>
